@@ -6,14 +6,26 @@ const propuestas = [
   { id: 2, titulo: 'Propuesta 2', monto: 2100, fecha: '10 octubre 2024' },
   { id: 3, titulo: 'Propuesta 3', monto: 1200, fecha: '08 octubre 2024' },
   { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+  { id: 4, titulo: 'Propuesta 4', monto: 2500, fecha: '31 octubre 2024' },
+
 ]
 
 export default function Propuestas() {
   return (
-    <div className="flex flex-col w-full h-screen bg-gray-100">
+    <div className="flex flex-col w-full h-screen overflow-auto">
       
-      <main className="flex-1 p-6">
-        <div className="bg-white rounded-lg shadow-md p-6">
+      <main className="flex-1 h-full">
+        <div className="h-full p-6">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-semibold text-gray-700">{propuestas.length} propuesta{propuestas.length !== 1 ? 's' : ''}</h2>
             <div className="flex space-x-4">
@@ -21,7 +33,7 @@ export default function Propuestas() {
                 <Filter className="w-5 h-5 mr-2" />
                 Filtrar
               </button>
-              <Link href="propuestas/crear/paso1" className="flex items-center px-4 py-2 rounded-md text-white bg-principal">
+              <Link href="propuestas/crear/" className="flex items-center px-4 py-2 rounded-md text-white bg-principal">
                 <Plus className="w-5 h-5 mr-2" />
                 Nueva propuesta
               </Link>
